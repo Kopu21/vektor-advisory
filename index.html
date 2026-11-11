@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vektor Advisory — Enterprise Tech Consultancy &amp; Digital Engineering</title>
+  <meta name="description" content="Vektor Advisory partners with forward-thinking enterprises to modernize cloud architecture, deploy production AI, and scale resilient software platforms." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sticky Navigation -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="Vektor Advisory Home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 7l8 12L20 7" />
+            <path d="M9 7l3 5 3-5" />
+          </svg>
+        </span>
+        <span class="brand-text">Vektor<span>.</span></span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="404.html" class="nav-link">About Us</a></li>
+          <li><a href="404.html" class="nav-link">Services</a></li>
+          <li><a href="404.html" class="nav-link">Contact Us</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="404.html" class="btn btn-ghost">Login</a>
+          <a href="404.html" class="btn btn-primary">Register</a>
+        </div>
+      </nav>
+
+      <button
+        type="button"
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg data-icon-open width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="4" y1="7" x2="20" y2="7" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="17" x2="20" y2="17" />
+        </svg>
+        <svg data-icon-close style="display: none;" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="6" y1="6" x2="18" y2="18" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="mobile-menu" aria-label="Mobile Navigation">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+        <li><a href="404.html" class="nav-link">About Us</a></li>
+        <li><a href="404.html" class="nav-link">Services</a></li>
+        <li><a href="404.html" class="nav-link">Contact Us</a></li>
+      </ul>
+      <div class="mobile-nav-actions">
+        <a href="404.html" class="btn btn-secondary">Login</a>
+        <a href="404.html" class="btn btn-primary">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            Enterprise Technology Consultancy
+          </span>
+          <h1>
+            Architecting <span class="text-gradient">resilient digital systems</span> for ambitious teams.
+          </h1>
+          <p class="hero-lead">
+            Vektor Advisory helps high-growth companies and global enterprises modernize cloud infrastructure, ship production AI, and eliminate technical bottlenecks without slowing delivery.
+          </p>
+          <div class="hero-cta">
+            <a href="404.html" class="btn btn-primary">
+              Book Strategy Call
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="M13 6l6 6-6 6" />
+              </svg>
+            </a>
+            <a href="404.html" class="btn btn-secondary">Explore Services</a>
+          </div>
+          <div class="hero-metrics">
+            <div>
+              <div class="metric-value">140+</div>
+              <div class="metric-label">Systems Modernized</div>
+            </div>
+            <div>
+              <div class="metric-value">99.98%</div>
+              <div class="metric-label">Production Uptime</div>
+            </div>
+            <div>
+              <div class="metric-value">3.4x</div>
+              <div class="metric-label">Faster Release Velocity</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Vektor Advisory Consulting Team">
+          <div class="hero-media-frame">
+            <img
+              src="assets/hero-consulting.jpg"
+              alt="Senior technology consultants and architects reviewing cloud microservices architecture in a modern glass studio"
+              class="hero-media-img"
+            />
+            <div class="hero-media-overlay">
+              <div>
+                <div class="hero-overlay-title">Principal Engineering Squads</div>
+                <div class="hero-overlay-stat">Cloud · Applied AI · Zero-Trust</div>
+              </div>
+              <span class="status-pill">● 48+ Global Architects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted Partners Strip -->
+    <section class="partners" aria-label="Trusted Clients">
+      <div class="container">
+        <p class="partners-label">Trusted by engineering leaders at</p>
+        <div class="partners-row">
+          <div class="partner-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            Meridian Bank
+          </div>
+          <div class="partner-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
+            Helix Health
+          </div>
+          <div class="partner-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"/></svg>
+            Aegis FinTech
+          </div>
+          <div class="partner-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M9 9h6v6H9z"/></svg>
+            AeroGrid Ops
+          </div>
+          <div class="partner-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            Lumina Cloud
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-kicker">Our Capabilities</span>
+          <h2 class="section-title">End-to-end engineering &amp; advisory services</h2>
+          <p class="section-subtitle">
+            Senior architects and principal engineers embedded directly alongside your teams to solve high-stakes technical challenges.
+          </p>
+        </div>
+
+        <!-- Visual Pillar Spotlight -->
+        <div class="spotlight-grid">
+          <article class="spotlight-card">
+            <img
+              src="assets/cloud-ai-visual.jpg"
+              alt="Isometric 3D visualization of modular cloud servers and fiber-optic neural compute pipelines"
+              loading="lazy"
+            />
+            <div class="spotlight-body">
+              <div>
+                <h3>Distributed Cloud &amp; AI Infrastructure</h3>
+                <p>High-throughput Kubernetes meshes, multi-region failover, and production LLM orchestration engineered for predictable latency and FinOps efficiency.</p>
+              </div>
+              <a href="404.html" class="spotlight-link">View cloud blueprints →</a>
+            </div>
+          </article>
+
+          <article class="spotlight-card">
+            <img
+              src="assets/security-shield.jpg"
+              alt="3D crystalline digital security shield surrounded by a zero-trust cryptographic mesh"
+              loading="lazy"
+            />
+            <div class="spotlight-body">
+              <div>
+                <h3>Zero-Trust Security &amp; Governance</h3>
+                <p>Cryptographic identity boundaries, automated policy-as-code compliance, and resilient perimeter defense built for regulated industries.</p>
+              </div>
+              <a href="404.html" class="spotlight-link">Explore security practice →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+              </svg>
+            </div>
+            <h3>Cloud &amp; Platform Engineering</h3>
+            <p>Multi-region cloud migrations, Kubernetes orchestration, infrastructure-as-code, and automated developer platforms.</p>
+            <a href="404.html" class="card-link">Explore service →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+              </svg>
+            </div>
+            <h3>Applied AI &amp; Data Systems</h3>
+            <p>Production RAG pipelines, domain-tuned models, real-time streaming analytics, and governed enterprise data lakes.</p>
+            <a href="404.html" class="card-link">Explore service →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3>Cybersecurity &amp; Zero-Trust</h3>
+            <p>Threat modeling, IAM hardening, automated compliance guardrails, and SOC 2 / ISO 27001 readiness architecture.</p>
+            <a href="404.html" class="card-link">Explore service →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3>Product &amp; UX Architecture</h3>
+            <p>High-performance web applications, scalable design systems, and customer portals engineered for conversion.</p>
+            <a href="404.html" class="card-link">Explore service →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3>Legacy Modernization</h3>
+            <p>Incremental monolith decomposition, API-first strangler patterns, and database refactoring with zero customer disruption.</p>
+            <a href="404.html" class="card-link">Explore service →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+              </svg>
+            </div>
+            <h3>Fractional CTO &amp; Advisory</h3>
+            <p>Technical due diligence, engineering org design, architecture governance, and executive technology roadmaps.</p>
+            <a href="404.html" class="card-link">Explore service →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology / About Us Preview -->
+    <section class="section section-white">
+      <div class="container split-grid">
+        <div class="about-media-wrap">
+          <div class="about-photo-card">
+            <img
+              src="assets/about-studio.jpg"
+              alt="Two senior Vektor Advisory consultants sketching cloud architecture on a glass whiteboard in a contemporary studio"
+              loading="lazy"
+            />
+            <span class="about-photo-caption">Architecture Review Studio · London &amp; San Francisco</span>
+          </div>
+
+          <div class="steps-list">
+            <div class="step-card">
+              <div class="step-num">01</div>
+              <div>
+                <h3>Discover &amp; Deep-Dive Audit</h3>
+                <p>We map system topology, reliability risks, cloud spend, and delivery bottlenecks in a focused 10-day technical assessment.</p>
+              </div>
+            </div>
+            <div class="step-card">
+              <div class="step-num">02</div>
+              <div>
+                <h3>Co-Build Production Foundations</h3>
+                <p>Our principal engineers pair directly with your squad to ship modular services, automated CI/CD, and observability.</p>
+              </div>
+            </div>
+            <div class="step-card">
+              <div class="step-num">03</div>
+              <div>
+                <h3>Enablement &amp; Clean Handover</h3>
+                <p>We leave behind clear runbooks, architecture decision records, and upskilled internal teams ready to own every component.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <span class="section-kicker">Why Vektor Advisory</span>
+          <h2 class="section-title">Senior practitioners, not slide-deck generalists.</h2>
+          <p class="section-subtitle">
+            Every engagement is staffed exclusively with principal architects and staff engineers who have scaled mission-critical platforms from zero to millions of users.
+          </p>
+          <ul class="about-panel-bullets">
+            <li>
+              <span class="check-badge" aria-hidden="true">✓</span>
+              Transparent fixed-milestone or embedded squad models
+            </li>
+            <li>
+              <span class="check-badge" aria-hidden="true">✓</span>
+              Vendor-neutral cloud &amp; AI architecture recommendations
+            </li>
+            <li>
+              <span class="check-badge" aria-hidden="true">✓</span>
+              Measurable KPIs tied to latency, cost, and deployment speed
+            </li>
+          </ul>
+          <a href="404.html" class="btn btn-primary">Meet Our Leadership Team</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Client Outcomes</span>
+          <h2 class="section-title">Proven impact across regulated and high-scale industries</h2>
+          <p class="section-subtitle">
+            Selected engagements showing how strategic architecture translates into measurable business velocity.
+          </p>
+        </div>
+
+        <div class="cases-grid">
+          <article class="case-card">
+            <div class="case-media">
+              <img
+                src="assets/case-enterprise.jpg"
+                alt="Enterprise operations command room displaying dark-mode network topology and real-time telemetry dashboards"
+                loading="lazy"
+              />
+              <span class="case-media-badge">FinTech · Cloud Migration</span>
+            </div>
+            <div class="case-body">
+              <div class="case-stat-inline">-41% Cloud Spend</div>
+              <h3>Re-architecting Meridian's core payment ledger</h3>
+              <p>Migrated 28 monolithic services to resilient Kubernetes clusters with automated failover across three availability zones.</p>
+              <a href="404.html" class="card-link">Read case study →</a>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-media">
+              <img
+                src="assets/healthtech-ai.jpg"
+                alt="Biomedical data engineers reviewing clinical AI analytics visualizations in a modern research studio"
+                loading="lazy"
+              />
+              <span class="case-media-badge">HealthTech · Applied AI</span>
+            </div>
+            <div class="case-body">
+              <div class="case-stat-inline">62% Faster Triage</div>
+              <h3>HIPAA-compliant clinical document intelligence</h3>
+              <p>Built an audited retrieval and summarization pipeline processing 180k daily records with strict PII redaction.</p>
+              <a href="404.html" class="card-link">Read case study →</a>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-media">
+              <img
+                src="assets/cloud-ai-visual.jpg"
+                alt="Modular cloud server clusters linked by glowing data pipelines"
+                loading="lazy"
+              />
+              <span class="case-media-badge">Logistics · Data Platform</span>
+            </div>
+            <div class="case-body">
+              <div class="case-stat-inline">10M+ Events / Day</div>
+              <h3>Real-time fleet telemetry &amp; route optimization</h3>
+              <p>Replaced nightly batch reporting with sub-second event streaming, cutting dispatch delays across 14 regional hubs.</p>
+              <a href="404.html" class="card-link">Read case study →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section section-white">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-kicker">Client Voices</span>
+          <h2 class="section-title">What engineering executives say</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <blockquote class="quote-card">
+            <p class="quote-text">
+              "Vektor helped us untangle six years of legacy infrastructure in four months. Our deployment cadence tripled while on-call incidents dropped by 70%."
+            </p>
+            <footer class="quote-author">
+              <div class="avatar-circle" aria-hidden="true">ER</div>
+              <div>
+                <div class="author-name">Elena Rostova</div>
+                <div class="author-role">VP of Engineering, Meridian Bank</div>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="quote-card">
+            <p class="quote-text">
+              "Unlike traditional consultancies, their architects wrote production Terraform and mentored our engineers every single day. The ROI was unmistakable."
+            </p>
+            <footer class="quote-author">
+              <div class="avatar-circle" aria-hidden="true">DK</div>
+              <div>
+                <div class="author-name">David K. Mensah</div>
+                <div class="author-role">Chief Technology Officer, Helix Health</div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call-to-Action Banner -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-banner">
+          <div class="cta-banner-copy">
+            <h2>Ready to modernize your technology roadmap?</h2>
+            <p>
+              Schedule a 30-minute architecture review with a Vektor principal engineer or create a client portal account to start a scope request.
+            </p>
+          </div>
+          <div class="cta-banner-actions">
+            <a href="404.html" class="btn btn-white">Contact Us</a>
+            <a href="404.html" class="btn btn-outline-light">Create Account</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand" aria-label="Vektor Advisory Home">
+            <span class="brand-mark" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 7l8 12L20 7" />
+                <path d="M9 7l3 5 3-5" />
+              </svg>
+            </span>
+            <span class="brand-text">Vektor<span>.</span></span>
+          </a>
+          <p>
+            Independent technology consultancy specializing in cloud platforms, applied AI, and resilient software engineering.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="404.html">About Us</a></li>
+            <li><a href="404.html">Services</a></li>
+            <li><a href="404.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Client Portal</h4>
+          <ul class="footer-links">
+            <li><a href="404.html">Login</a></li>
+            <li><a href="404.html">Register</a></li>
+            <li><a href="404.html">Case Studies</a></li>
+            <li><a href="404.html">Security &amp; Compliance</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Architecture Briefing</h4>
+          <p style="font-size: 0.88rem; color: var(--text-on-dark-muted);">
+            Monthly notes on cloud FinOps, distributed systems, and AI engineering.
+          </p>
+          <form id="newsletter-form" class="newsletter-form">
+            <label for="newsletter-email" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Email address</label>
+            <input id="newsletter-email" type="email" placeholder="you@company.com" />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Vektor Advisory Inc. All rights reserved.</span>
+        <span>Built for desktop, tablet, and mobile</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
